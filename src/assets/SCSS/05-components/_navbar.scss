@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-blue;
+    height: 70px;
+    border-bottom: 3px solid $yellow;
+
+    :first-child {
+      margin-left: 25px;
+      margin-top: 5px;
+    }
+    :nth-child(2){
+        position: absolute;
+        padding-left: 88px;
+    }
+    :nth-child(3) {
+      margin-right: 25px;
+      height: 27.5px;
+    }
+  }

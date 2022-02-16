@@ -1,0 +1,148 @@
+<!-- navbar -->
+<div class="navbar">
+    <img src="../assets/img/logo-umane.png" alt="logo-umane">
+    <img src="../assets/img/text-umane.svg" alt="">
+    <img src="../assets/img/globo-ico.png" alt="Globo">
+</div>
+
+<br>
+
+<h1>Prueba Titulo H1</h1>
+
+
+<p>Link</p>
+<a href="#">¿Olvidaste tu clave?</a>
+
+<br>
+
+<!-- input -->
+<div>
+    <label for="user">Usuario</label>
+    <mat-form-field appearance="outline">
+        <input type="email" id="user" matInput placeholder="Usuario NTT DATA">
+    </mat-form-field>
+</div>
+
+
+<br>
+
+<!-- mat card header -->
+<mat-card-header>
+    <mat-card-title class="title">Bienvenido a UMANE</mat-card-title>
+</mat-card-header>
+
+<!-- card -->
+<mat-card class="info-card">
+    <mat-card-title>¿Que es Umane?</mat-card-title>
+    <mat-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, cum!
+    </mat-card-content>
+</mat-card>
+
+<br>
+
+<!-- button login -->
+<p>Boton</p>
+<button mat-button>Ingresar</button>
+
+<!-- select -->
+<p>Select</p>
+<label for="">Label Select</label>
+<br>
+<mat-form-field appearance="outline">
+    <mat-label>Select</mat-label>
+    <mat-select>
+        <mat-option>
+            <option value="opcion1">Opción 1</option>
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<br>
+
+<!-- chip -->
+<mat-chip-list aria-label="Agregar personas">
+    <mat-chip>Max Jara</mat-chip>
+    <mat-chip>Luis Valenzuela</mat-chip>
+    <mat-chip color="primary" selected>Felipe Soto</mat-chip>
+    <mat-chip color="secondary" selected>Natalia Valenzuela</mat-chip>
+</mat-chip-list>
+<br>
+
+<!-- buttons -->
+
+<label for="primary">Boton Primario</label>
+<br>
+<button id="primary" mat-button>Primary</button>
+<br>
+<label for="secondary">Boton Secundario</label>
+<br>
+<button id="secondary" mat-button>Secondary</button>
+
+<br>
+
+<!-- Button Support -->
+
+<!-- radio button -->
+<label for="radio">Radio Button</label>
+<br>
+<mat-radio-group id="radio" aria-label="Selecciona una opción">
+    <mat-radio-button value="1">Option 1</mat-radio-button>
+    <mat-radio-button value="2">Option 2</mat-radio-button>
+</mat-radio-group>
+<br>
+
+<!-- slide toggle -->
+<mat-slide-toggle>Slide Toggle</mat-slide-toggle>
+<br>
+
+<!-- Checkbox -->
+<mat-checkbox>Checkbox</mat-checkbox>
+<br>
+
+<!-- Table -->
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="usuario">
+        <th mat-header-cell *matHeaderCellDef> Usuario</th>
+        <td mat-cell *matCellDef="let element"> {{element.usuario}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="permisos">
+        <th mat-header-cell *matHeaderCellDef> Permisos </th>
+        <td mat-cell *matCellDef="let element"> {{element.permisos}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="botones">
+        <th mat-header-cell *matHeaderCellDef> Acciones </th>
+        <td mat-cell *matCellDef="let element"> {{element.botones}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<br>
+
+<!-- tabs -->
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Texto o icono">Herramienta 1</mat-tab>
+    <mat-tab label="Texto o icono">Herramienta 2</mat-tab>
+    <mat-tab label="Texto o icono">Herramienta 3</mat-tab>
+    <mat-tab label="Texto o icono">Herramienta 4</mat-tab>
+</mat-tab-group>
+
+<!-- footer -->
+<div class="footer">
+    <p>Versión 3.0 / 2022</p>
+</div>
+
+<!-- notification -->
+
+  
+  <!-- <button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+    Pizza party
+  </button> -->
