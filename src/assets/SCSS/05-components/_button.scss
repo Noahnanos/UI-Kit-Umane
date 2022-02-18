@@ -1,0 +1,29 @@
+
+.login-button{
+    width: 100%;
+    max-width: 160px;
+    background-color: $yellow;
+    color: $white;
+}
+
+.primary-button{
+    width: 100%;
+    max-width: 160px;
+    background-color: $human-blue;
+    color: $white;
+    background-image: url("../../img/white-cross-ico.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 20px;
+}
+
+.secondary-button{
+    width: 100%;
+    max-width: 160px;
+    background-color: $white;
+    color: $human-blue;
+    background-image: url("../../img/blue-cross-ico.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 20px;
+}
