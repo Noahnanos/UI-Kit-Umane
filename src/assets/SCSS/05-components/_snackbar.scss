@@ -1,0 +1,19 @@
+.snack-bar-success{
+    background-color: $green-notify;
+    color: $green-notify-text;
+  }
+
+  .snack-bar-danger{
+    background-color: $red-notify;
+    color: $red-notify-text;
+  }
+
+  .snack-bar-warning{
+    background-color: $yellow-notify;
+    color: $yellow-notify-text;
+  }
+
+  .snack-bar-info{
+    background-color: $green-notify;
+    color: $blue-notify-text;
+  }

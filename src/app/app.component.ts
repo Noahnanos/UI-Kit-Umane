@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,14 @@ export class AppComponent {
 
   displayedColumns: string[] = ['usuario', 'permisos', 'botones'];
   dataSource = ELEMENT_DATA;
+
+  constructor(private _snackBar: MatSnackBar) {}
+
+  openSnackBar() {
+    this._snackBar.open('SnackBar', 'X',{duration:2000, panelClass:['snack-bar-warning']});
+    
+    
+  }
 }
 //table
 export interface ExampleTable {

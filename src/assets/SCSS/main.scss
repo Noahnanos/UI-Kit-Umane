@@ -1,5 +1,5 @@
 //Imports
-
+@import './00-settings/theme';
 @import './00-settings/colors';
 @import './00-settings/fonts';
 
@@ -9,7 +9,7 @@
 @import './02-generic/generic';
 @import './02-generic/normalize';
 @import './03-elements/table';
-
+@import './05-components/snackbar';
 @import './05-components/navbar';
 @import './05-components/footer-login';
 @import './05-components/button';
