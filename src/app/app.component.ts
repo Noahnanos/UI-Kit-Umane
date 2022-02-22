@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
+import {MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition} from '@angular/material/snack-bar';
+import { ModalCreateProjectComponent } from './modal-create-project/modal-create-project.component';
 
 @Component({
   selector: 'app-root',
@@ -12,14 +14,30 @@ export class AppComponent {
   displayedColumns: string[] = ['usuario', 'permisos', 'botones'];
   dataSource = ELEMENT_DATA;
 
-  constructor(private _snackBar: MatSnackBar) {}
+  horizontalPosition: MatSnackBarHorizontalPosition = 'right';
+  verticalPosition: MatSnackBarVerticalPosition = 'top';
+
+  constructor(private _snackBar: MatSnackBar, public dialog: MatDialog) {}
 
   openSnackBar() {
-    this._snackBar.open('SnackBar', 'X',{duration:2000, panelClass:['snack-bar-warning']});
+    this._snackBar.open('SnackBar', 'X',{
+      duration:2000, 
+      panelClass:['snack-bar-warning'],
+      horizontalPosition: this.horizontalPosition,
+      verticalPosition: this.verticalPosition
+    });
     
     
   }
+  openDialog() {
+    const dialogRef = this.dialog.open(ModalCreateProjectComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
+
 //table
 export interface ExampleTable {
   usuario: number;

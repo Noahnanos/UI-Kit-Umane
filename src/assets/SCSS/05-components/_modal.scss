@@ -1,0 +1,23 @@
+.mat-dialog-container{
+    width: 450px !important;
+    height: 427px !important;
+    padding: 0 !important;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    width: 100%;
+    background-color: $dark-blue;
+    color: $white;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+        margin-left: 28%;
+        padding-right: 12px;
+    }
+}
+.mat-dialog-content{
+    margin: 0 !important;
+}

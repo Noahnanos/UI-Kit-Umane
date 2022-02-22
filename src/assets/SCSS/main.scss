@@ -5,7 +5,7 @@
 
 @import './01-tools/mixin';
 @import './03-elements/_headings';
-
+@import './03-elements/_card';
 @import './02-generic/generic';
 @import './02-generic/normalize';
 @import './03-elements/table';
@@ -14,3 +14,5 @@
 @import './05-components/footer-login';
 @import './05-components/button';
 @import './99-utilities/button';
+@import './99-utilities/input';
+@import './05-components/modal';

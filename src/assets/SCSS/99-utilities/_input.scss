@@ -1,0 +1,22 @@
+mat-form-field{
+    position: absolute;
+    width: 80%;
+    height: 35px;
+    line-height: 29px !important;
+  }
+
+.mat-form-field-flex:not(.mat-form-field-disabled){
+    height: 35px;
+    align-items: center;
+  }
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick,
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color: #e7e7e7;    
+}
+.mat-form-field-autofill-control.mat-input-element::placeholder{
+    font-size: 14px;
+}
+.mat-form-field-autofill-control.mat-input-element{
+    padding-bottom: 8px;
+}

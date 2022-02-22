@@ -67,7 +67,7 @@
     <mat-chip>Max Jara</mat-chip>
     <mat-chip>Luis Valenzuela</mat-chip>
     <mat-chip color="accent" selected>Felipe Soto</mat-chip>
-    <mat-chip color="warn" >Natalia Valenzuela</mat-chip>
+    <mat-chip color="warn">Natalia Valenzuela</mat-chip>
 </mat-chip-list>
 <br>
 
@@ -137,12 +137,18 @@
     <mat-tab label="Texto o icono">Herramienta 4</mat-tab>
 </mat-tab-group>
 
+
+<!-- notification -->
+<button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+    Mensaje Emergente
+</button>
+
+
+<button mat-button (click)="openDialog()">Open dialog</button>
+
+
+
 <!-- footer -->
 <div class="footer">
     <p>Versión 3.0 / 2022</p>
 </div>
-
-<!-- notification -->
-  <button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
-    Mensaje Emergente
-  </button>
