@@ -2,10 +2,23 @@
     <h5>Crear Proyecto</h5>
     <img src="../../assets/img/close-white.svg" alt="cerrar">
 </div>
-<mat-dialog-content class="mat-typography">
-<h1>wololo</h1>
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
-</mat-dialog-actions>
+<div class="modal-body">
+  <form>
+    <label for="name-project">Nombre del Proyecto</label>
+    <mat-form-field appearance="outline">
+        <input type="text" id="name-project" matInput placeholder="Usuario NTT DATA">
+    </mat-form-field>
+    <label for="user">Usuario</label>
+    <mat-form-field appearance="outline">
+        <input type="email" id="user" matInput placeholder="Usuario NTT DATA">
+    </mat-form-field>
+    <label for="user">Usuario</label>
+    <mat-form-field appearance="outline">
+        <input type="email" id="user" matInput placeholder="Usuario NTT DATA">
+    </mat-form-field>
+  </form>
+  <mat-dialog-actions align="end">
+    <button class="primary-button" id="primary" mat-button>Texto</button>
+    <button class="secondary-button" id="secondary" mat-stroked-button>Texto</button>
+  </mat-dialog-actions>
+</div>
